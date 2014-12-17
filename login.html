@@ -2,23 +2,15 @@
 <html>
 <head>
 	<link rel="shortcut icon" href="slogo.png">
-	<link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="stylesheet" href="common_style.css" type="text/css">
 	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="stylesheet" href="login_style.css" type="text/css">
 	<title>Online Shop</title>
-	
 </head>
-<body onload="changeImage('changer')">
-	
+<body>
 	<header id="header">
 		<img src="slogo.png" height="64px" width="76px">
 		<img src="logo.png"height="68px" width="157px">
-		<div class="toplink">
-			<ul>
-				<li><a href="signup.html" id="signup">Sign Up</a></li>
-				<li><a href="login.html" id="login">Login</a></li>
-			</ul>
-		</div>
 		<nav>
 		<ul>
 			<li><a class="link" href="books.html">BOOKS</a></li>
@@ -28,19 +20,32 @@
 		</ul>
 		</nav>	
 	</header>
-	<!-- <section>
- -->		<form id="searchform">
+	<form id="searchform">
 				<input id="search" type="text" placeholder="Search" required>
 				<input id="button" type="button" onClick="search('search')" value="Search">
-			</form>
-		<div class="imgchanger">
-			<a href="second.html"><img src="fone.jpg" id="changer" width="500px"></a>
-		</div>
-	<!-- </section> -->
+	</form>
+	<section>
+		<b>Login</b><br><br>
+		<table>
+			<tr>
+				<td><label for="Username">Username</td>
+				<td><input type="text"></td>
+			</tr>
+			<tr><td></td></tr>
+			<tr><td></td></tr>
+			<tr><td></td></tr>
+			<tr><td></td></tr>
+			<tr><td></td></tr>
+			<tr>
+				<td><label for="Password">Password</td>
+				<td><input type="password"></td>
+			</tr>
+		</table>
+		<button>Login</button>
+	</section>
 	<footer id="footer">
 	www.onlineshop.com
 	</footer>
-	<script src="changeImage.js"></script>
-	<script src="search.js"></script>
+
 </body>
 </html>
