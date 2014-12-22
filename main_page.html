@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" href="slogo.png">
-	<link rel="stylesheet" href="style.css" type="text/css">
-	<link rel="stylesheet" href="common_style.css" type="text/css">
-	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="shortcut icon" href="./assets/images/slogo.png">
+	<link rel="stylesheet" href="./assets/styles/main_page_style.css" type="text/css">
+	<link rel="stylesheet" href="./assets/styles/normalize.css" type="text/css">
 	<title>Online Shop</title>
-	
 </head>
 <body onload="changeImage('changer')">
-	
 	<header id="header">
-		<img src="slogo.png" height="64px" width="76px">
-		<img src="logo.png"height="68px" width="157px">
-		<div class="toplink">
-			<ul>
-				<li><a href="signup.html" id="signup">Sign Up</a></li>
-				<li><a href="login.html" id="login">Login</a></li>
-			</ul>
+		<div id="fixed_header">
+			<div class="logo">
+				<img src="./assets/images/slogo.png" width="12%">
+				<img src="./assets/images/logo.png" width="29%">
+			</div>
+			<div class="toplink">
+				<ul id="toplist">
+					<li class="top-links"><a href="login.html" id="login">Login</a></li>
+					<li class="top-links"><a href="signup.html" id="signup">Sign Up</a></li>
+				</ul>
+			</div>
 		</div>
 		<nav>
-		<ul>
-			<li><a class="link" href="books.html">BOOKS</a></li>
-			<li><a class="link" href="women.html">WOMEN</a></li>
-			<li><a class="link" href="men.html">MEN</a></li>
-			<li><a class="link" href="main_page.html">HOME</a></li>
-		</ul>
+			<ul>
+				<li><a class="link" href="main_page.html">HOME</a></li>
+				<li><a class="link" href="men.html">MEN</a></li>
+				<li><a class="link" href="women.html">WOMEN</a></li>
+				<li><a class="link" href="books.html">BOOKS</a></li>
+			</ul>
 		</nav>	
 	</header>
-	<!-- <section>
- -->		<form id="searchform">
-				<input id="search" type="text" placeholder="Search" required>
-				<input id="button" type="button" onClick="search('search')" value="Search">
-			</form>
+	<section>
+ 		<form id="searchform">
+			<input id="search" type="search" placeholder="Search" required>
+			<button id="button" type="submit" onClick="search('search')">Search</button>
+		</form>
 		<div class="imgchanger">
-			<a href="second.html"><img src="fone.jpg" id="changer" width="500px"></a>
+			<a href="second.html"><img src="./assets/images/fone.jpg" id="changer" width="68%"></a>
 		</div>
-	<!-- </section> -->
+	</section>
 	<footer id="footer">
 	www.onlineshop.com
 	</footer>
-	<script src="changeImage.js"></script>
-	<script src="search.js"></script>
+	<script src="./script/changeImage.js"></script>
+	<script src="./script/search.js"></script>
 </body>
 </html>

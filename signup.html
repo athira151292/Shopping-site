@@ -1,79 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="shortcut icon" type="image/x-icon" href="slogo.ico"><title>Sign Up</title>
-	<link rel="stylesheet" href="style_signup.css" type="text/css">
-	<link rel="stylesheet" href="common_style.css" type="text/css">
-	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/slogo.png"><title>Sign Up</title>
+	<link rel="stylesheet" href="./assets/styles/style_signup.css" type="text/css">
+	<link rel="stylesheet" href="./assets/styles/normalize.css" type="text/css">
 	
 </head>
 <body>
 <header id="header">
-	<img src="slogo.png" height="64px" width="76px">
-	<img src="logo.png" height="68px" width="157px">
+	<div id="fixed_header">
+		<div class="logo">
+			<img src="./assets/images/slogo.png" width="12%">
+			<img src="./assets/images/logo.png" width="29%">
+		</div>
+	</div>
 	<nav>
 		<ul>
-			<li><a class="link" href="books.html">BOOKS</a></li>
-			<li><a class="link" href="women.html">WOMEN</a></li>
-			<li><a class="link" href="men.html">MEN</a></li>
 			<li><a class="link" href="main_page.html">HOME</a></li>
+			<li><a class="link" href="men.html">MEN</a></li>
+			<li><a class="link" href="women.html">WOMEN</a></li>
+			<li><a class="link" href="books.html">BOOKS</a></li>
 		</ul>
-	</nav>
+	</nav>	
 </header>
-
 <form id="searchform">
-	<input id="search" type="text" placeholder="Search" required>
-	<input id="button" type="button" value="Search">
+	<input id="search" type="search" placeholder="Search" required>
+	<button id="button" type="submit" onClick="search('search')">Search</button>
 </form>
-<div>
-	<img src="bag.jpg" id="bag" height="250px" width="300px">
-<form action="third.html" id="signupform">
-
 <section>
-	<br><br>
-	<b>Sign Up for Free</b><br><br>
-	<table>
-		<tr>
-			<td><label for="name">Name</label></td>
-			<td><input type="text" required></td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<td><label for="email">E-mail id</label></td>
-			<td><input type="email"required></td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<td><label for="phno">Ph. No.</label></td>
-			<td><input type="number" required></td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<td><label for="password">Enter Password</label></td>
-			<td><input type="password" id="pass" required></td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<td><label for="pass">Re-enter Password</label></td>
-			<td><input type="password" id="repass" onChange="check('pass','repass')" required></td>
-		</tr>
-		</table>
-	<br>
-	<div>
-	<button>Sign Up</button>
-    </div>
+	<div class="bag">
+		<img src="./assets/images/bag.jpg">
+	</div>
+	<div id="signupform">
+		<form action="third.html">
+			<table>
+				<thead>
+					<h3 id="theading">Sign Up for Free</h3>
+				</thead>
+				<tbody>
+					<tr>
+						<td><label for="name">Name</label></td>
+						<td><input type="text" required></td>
+					</tr>
+					<tr>
+						<td><label for="email">E-mail id</label></td>
+						<td><input type="email"required></td>
+					</tr>
+					<tr>
+						<td><label for="phno">Ph. No.</label></td>
+						<td><input type="tel" required></td>
+					</tr>
+					<tr>
+						<td><label for="password">Enter Password</label></td>
+						<td><input type="password" id="pass" required></td>
+					</tr>
+					<tr>
+						<td><label for="pass">Re-enter Password</label></td>
+						<td><input type="password" id="repass" onChange="check('pass','repass')" required></td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="submit">
+				<button id="signupbutton">Sign Up</button>
+			</div>
+    	</form>
+	</div>
 </section>
-
-</form>
-</div>
 <footer id="footer">
 	www.onlineshop.com
 </footer>
-<script src="checkpass.js"></script>
-<script src="search.js"></script>
+<script src="./script/checkpass.js"></script>
+<script src="./script/search.js"></script>
 </body>
 </html>
